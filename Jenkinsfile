@@ -12,8 +12,12 @@ pipeline {
 		stage ('óne') {
 			
 			steps {
-				echo "hello volocit"	
+				sh "yum install httpd -y"
+				sh "cp index.html /var/www/html/"
+				sh "servie httpd start"
+				sh "chmod -R 777 /var/www/html/index.html"
 			}
+		
 
 			
 		}
