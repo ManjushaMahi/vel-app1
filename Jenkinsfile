@@ -10,8 +10,12 @@ pipeline {
         }
 	stages {
 		stage ('óne') {
+			
+			steps {
+				echo "hello volocit"	
+			}
 
-			echo "hello volocit"
+			
 		}
 	}
 }
