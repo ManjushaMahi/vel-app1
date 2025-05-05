@@ -1,0 +1,17 @@
+pipeline { 
+	agent {
+
+		label {
+
+			label "built-in"
+			customWorkspace "/mnt/test"
+		
+		}
+        }
+	stages {
+		stage ('óne') {
+			
+			steps {
+				echo "hi 2025Q1 branch"
+			}
+		
