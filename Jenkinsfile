@@ -12,10 +12,7 @@ pipeline {
 		stage ('óne') {
 			
 			steps {
-				sh " sudo yum install httpd -y"
-				sh "sudo cp index.html /var/www/html/"
-				sh " sudo service httpd start"
-				sh " sudo chmod -R 777 /var/www/html/index.html"
+				echo "hi master branch"
 			}
 		
 
