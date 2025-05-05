@@ -1,15 +1,16 @@
-pipeline{
-	agent{
+pipeline { 
+	agent {
 
-		label{
+		label {
 
 			label "built-in"
 			customWorkspace "/mnt/test"
 		
 		}
         }
-	stages{
-		stage{
+	stages {
+		stage ('óne') {
+
 			echo "hello volocit"
 		}
 	}
